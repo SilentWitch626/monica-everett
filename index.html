@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Monica Everett — The Silent Witch</title>
+<meta name="description" content="A fan page about Monica Everett, the Silent Witch, heroine of Secrets of the Silent Witch.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,700;1,500&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f6f3ee;
+    --surface: #ffffff;
+    --ink: #22262e;
+    --muted: #5d6470;
+    --accent: #2f6b5a;
+    --accent-soft: #e2eee9;
+    --gold: #a07a2c;
+    --line: #e2ddd3;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #12151b;
+      --surface: #1a1f27;
+      --ink: #e7e4dd;
+      --muted: #a2a8b3;
+      --accent: #7cc2a9;
+      --accent-soft: #1f2e2a;
+      --gold: #d4b066;
+      --line: #2b313b;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 17px/1.65 Inter, system-ui, sans-serif;
+  }
+  a { color: var(--accent); }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 16px; }
+
+  header.hero {
+    position: relative;
+    overflow: hidden;
+    padding: 96px 0 72px;
+    text-align: center;
+    border-bottom: 1px solid var(--line);
+  }
+  header.hero svg.circle {
+    position: absolute;
+    left: 50%; top: 50%;
+    width: 560px; max-width: 140vw;
+    transform: translate(-50%, -50%);
+    opacity: .18;
+    color: var(--accent);
+    animation: spin 120s linear infinite;
+  }
+  @keyframes spin { to { transform: translate(-50%, -50%) rotate(360deg); } }
+  @media (prefers-reduced-motion: reduce) { header.hero svg.circle { animation: none; } }
+  .eyebrow {
+    position: relative;
+    font-size: 13px; letter-spacing: .18em; text-transform: uppercase;
+    color: var(--gold); margin: 0 0 12px;
+  }
+  h1 {
+    position: relative;
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: clamp(44px, 9vw, 80px);
+    line-height: 1.05; margin: 0;
+  }
+  .tagline {
+    position: relative;
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-style: italic; font-size: 22px; color: var(--muted);
+    margin: 16px auto 0; max-width: 34ch;
+  }
+
+  nav {
+    position: sticky; top: 0; z-index: 1;
+    background: var(--bg);
+    border-bottom: 1px solid var(--line);
+  }
+  nav ul {
+    list-style: none; margin: 0 auto; padding: 0 16px;
+    display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;
+    max-width: 860px;
+  }
+  nav a {
+    display: block; padding: 12px 0;
+    font-size: 14px; font-weight: 600; text-decoration: none; color: var(--muted);
+  }
+  nav a:hover { color: var(--accent); }
+
+  section { padding: 56px 0 8px; }
+  h2 {
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: 36px; margin: 0 0 16px;
+  }
+  h2::after {
+    content: ""; display: block; width: 48px; height: 2px;
+    background: var(--gold); margin-top: 8px;
+  }
+
+  .profile {
+    display: grid; grid-template-columns: max-content 1fr;
+    gap: 8px 24px; margin: 0;
+    background: var(--surface); border: 1px solid var(--line);
+    border-radius: 12px; padding: 20px 24px;
+  }
+  .profile dt { color: var(--muted); font-size: 14px; padding-top: 2px; }
+  .profile dd { margin: 0; }
+  @media (max-width: 520px) {
+    .profile { grid-template-columns: 1fr; gap: 0; }
+    .profile dd { margin-bottom: 10px; }
+  }
+
+  .cards {
+    display: grid; gap: 16px;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  }
+  .card {
+    background: var(--surface); border: 1px solid var(--line);
+    border-radius: 12px; padding: 20px;
+  }
+  .card h3 { margin: 0 0 6px; font-size: 17px; }
+  .card p { margin: 0; color: var(--muted); font-size: 15px; }
+
+  blockquote {
+    margin: 24px 0; padding: 16px 20px;
+    background: var(--accent-soft); border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-family: "Cormorant Garamond", Georgia, serif; font-size: 21px; font-style: italic;
+  }
+
+  footer {
+    margin-top: 64px; padding: 32px 0 48px;
+    border-top: 1px solid var(--line);
+    color: var(--muted); font-size: 14px; text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <svg class="circle" viewBox="0 0 200 200" aria-hidden="true" fill="none" stroke="currentColor" stroke-width=".6">
+    <circle cx="100" cy="100" r="96"/>
+    <circle cx="100" cy="100" r="84"/>
+    <circle cx="100" cy="100" r="40"/>
+    <polygon points="100,16 172.7,142 27.3,142"/>
+    <polygon points="100,184 27.3,58 172.7,58"/>
+    <circle cx="100" cy="100" r="60" stroke-dasharray="2 4"/>
+  </svg>
+  <div class="wrap">
+    <p class="eyebrow">Secrets of the Silent Witch</p>
+    <h1>Monica Everett</h1>
+    <p class="tagline">The Silent Witch — one of the Seven Sages, and the only mage who casts without a word.</p>
+  </div>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="#profile">Profile</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#magic">Unchanted Magic</a></li>
+    <li><a href="#mission">The Mission</a></li>
+    <li><a href="#traits">Traits</a></li>
+    <li><a href="#series">The Series</a></li>
+  </ul>
+</nav>
+
+<main class="wrap">
+
+  <section id="profile">
+    <h2>Profile</h2>
+    <dl class="profile">
+      <dt>Name</dt>        <dd>Monica Everett</dd>
+      <dt>Title</dt>       <dd>The Silent Witch, one of the Seven Sages</dd>
+      <dt>Kingdom</dt>     <dd>Ridill</dd>
+      <dt>Signature</dt>   <dd>Unchanted (incantation-free) magic</dd>
+      <dt>Cover name</dt>  <dd>Monica Norton, student at Serendia Academy</dd>
+      <dt>Companion</dt>   <dd>Nero, her familiar — a black dragon who passes as a black cat</dd>
+      <dt>Loves</dt>       <dd>Numbers, formulas and quiet</dd>
+    </dl>
+  </section>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>Monica Everett is the heroine of <em>Secrets of the Silent Witch</em>. In the Kingdom of Ridill,
+       the Seven Sages are the most powerful mages in the land, and Monica earned her place among them
+       while still a teenager. Her title, the <strong>Silent Witch</strong>, comes from her unique talent:
+       she is the only person known to cast spells without chanting an incantation.</p>
+    <p>The legend and the girl could hardly be more different. Monica is painfully shy and struggles
+       to speak with other people at all. Rather than enjoy the prestige of a Sage, she lives a reclusive
+       life in a cabin in the mountains, happiest when she is alone with her calculations.</p>
+    <blockquote>The greatest mage of her generation — who would rather do almost anything than talk to someone.</blockquote>
+  </section>
+
+  <section id="magic">
+    <h2>Unchanted Magic</h2>
+    <p>In this world, magic is built from formulas that a mage normally recites aloud as a chant.
+       Monica developed unchanted magic to spare herself the ordeal of speaking in front of others:
+       she constructs the spell's formula entirely in her head.</p>
+    <p>Because she needs no chant, her spells are fast, precise and hard to anticipate — and her
+       deep love of mathematics is exactly what makes it possible. When she is overwhelmed, she steadies
+       herself by counting and working through numbers.</p>
+  </section>
+
+  <section id="mission">
+    <h2>The Mission</h2>
+    <p>Monica's quiet life ends when fellow Sage Louis Miller, the Barrier Mage, hands her a secret
+       assignment: protect the kingdom's Second Prince, Felix Arc Ridill, without anyone — the prince
+       included — knowing she is there.</p>
+    <p>To do it, she enrolls at the elite Serendia Academy under the name <strong>Monica Norton</strong>,
+       posing as an ordinary student. For someone who fears conversation, a school full of nobles, social
+       rules and schemes is its own kind of battlefield. Keeping her secret while guarding the prince is
+       the heart of the story.</p>
+  </section>
+
+  <section id="traits">
+    <h2>Traits</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Genius mage</h3>
+        <p>A Sage whose unchanted spells no one else can replicate.</p>
+      </div>
+      <div class="card">
+        <h3>Extremely shy</h3>
+        <p>Talking to people frightens her far more than any battle.</p>
+      </div>
+      <div class="card">
+        <h3>Numbers lover</h3>
+        <p>Mathematics is her comfort, her hobby and the root of her magic.</p>
+      </div>
+      <div class="card">
+        <h3>Kind at heart</h3>
+        <p>Beneath the nerves is someone who quietly works to protect others.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="series">
+    <h2>The Series</h2>
+    <p><em>Secrets of the Silent Witch</em> (<em>Silent Witch: Chinmoku no Majo no Kakushigoto</em>) began as a
+       web novel by Matsuri Isora and was published as a light novel series with illustrations by Nanaka Fujimi.
+       It has been adapted into manga and, in 2025, a television anime.</p>
+    <p>If you enjoy stories about a hidden genius navigating everyday life, Monica's story — part school drama,
+       part magical mystery — is well worth a look.</p>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    An unofficial fan page. Monica Everett and <em>Secrets of the Silent Witch</em> belong to their respective creators and publishers.
+  </div>
+</footer>
+
+</body>
+</html>
